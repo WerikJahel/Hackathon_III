@@ -32,7 +32,7 @@ const cadeira: Patrimonio = new Patrimonio(
   23456,
   34567,
   "cadeira",
-  "2023/05/28 12:39:00",
+  "2023/05/28 12:39:22",
   36,
   100,
   10,

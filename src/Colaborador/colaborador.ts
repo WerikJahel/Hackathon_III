@@ -2,7 +2,7 @@ import { Setor } from "../Setor/setor";
 import { Cargo } from "../Cargo/cargo";
 
 class Colaborador {
-  private _setor!: Setor;
+  private _setor: Setor;
   private _idColaborador: number = 0;
   private _CPF: string = "";
   private _nomeCompleto: string = "";
@@ -13,7 +13,7 @@ class Colaborador {
   private _senha: string = "";
   private _homeOffice: boolean = false;
   private _observacao: string = "";
-  private _cargo!: Cargo;
+  private _cargo: Cargo;
 
   public get setor(): Setor {
     return this._setor;
@@ -125,6 +125,15 @@ class Colaborador {
     this.homeOffice = homeOffice;
     this.observacao = observacao;
     this.cargo = cargo;
+  }
+
+  gerarIDColaborador(): number {
+    return Number(
+      `${new Date().getFullYear()}
+      ${new Date().getMonth()}
+      ${new Date().getDay()}
+      ${Math.floor(Math.random() * 9999)}`
+    );
   }
 }
 

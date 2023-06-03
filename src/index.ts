@@ -40,8 +40,35 @@ const cadeira: Patrimonio = new Patrimonio(
   oco0001
 );
 
-console.log(sentavel);
+//console.log(sentavel);
 
-console.log(oco0001);
+//console.log(oco0001);
 
-console.log(cadeira);
+//console.log(cadeira);
+
+const joao = new Colaborador(
+  new Setor(
+    12345,
+    "Finanças",
+    "Gerir a utilação dos recursos",
+    new Departamento(
+      123,
+      "Financeiro",
+      "Abarcar todos os setores relacionados a finança"
+    ),
+    [cadeira]
+  ),
+  123456789,
+  "000.000.000-00",
+  "joão",
+  "",
+  15000,
+  40,
+  "",
+  "",
+  false,
+  "",
+  new Cargo(1234567, "Pagador", "Pagar os funcionários")
+);
+
+console.log(joao);

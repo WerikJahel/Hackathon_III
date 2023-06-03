@@ -8,15 +8,15 @@ import {
 
 class Patrimonio {
   private _categoria: Categoria[] = [];
-  private _idPatrimonio: number = 0;
-  private _codigo: number = 0;
-  private _nomeDoBem: string = "";
-  private _dataDeAquisicao: string = "";
-  private _vidaUtil: number = 0; //Em Meses
-  private _custo: number = 0; //valorAdiquirido
+  private _idPatrimonio: number;
+  private _codigo: number;
+  private _nomeDoBem: string;
+  private _dataDeAquisicao: string;
+  private _vidaUtil: number; //Em Meses
+  private _custo: number; //valorAdiquirido
   private _depreciacao: number = 0; //Em porcentagem de acordo com a categoria
   private _estado: EstadoDoBem = EstadoDoBem.ATIVO;
-  private _ocorrencia!: Ocorrencia;
+  private _ocorrencia: Ocorrencia;
 
   public get categoria(): Categoria[] {
     return this._categoria;

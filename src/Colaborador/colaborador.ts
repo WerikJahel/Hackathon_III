@@ -3,16 +3,16 @@ import { Cargo } from "../Cargo/cargo";
 
 class Colaborador {
   private _setor: Setor;
-  private _idColaborador: number = 0;
-  private _CPF: string = "";
-  private _nomeCompleto: string = "";
-  private _imagem: string = "";
-  private _salario: number = 0;
-  private _cargaHorariaSemanal: number = 0;
-  private _email: string = "";
-  private _senha: string = "";
-  private _homeOffice: boolean = false;
-  private _observacao: string = "";
+  private _idColaborador: number;
+  private _CPF: string;
+  private _nomeCompleto: string;
+  private _imagem: string;
+  private _salario: number;
+  private _cargaHorariaSemanal: number;
+  private _email: string;
+  private _senha: string;
+  private _homeOffice: boolean;
+  private _observacao: string;
   private _cargo: Cargo;
 
   public get setor(): Setor {
@@ -101,7 +101,6 @@ class Colaborador {
 
   constructor(
     setor: Setor,
-    idColaborador: number,
     CPF: string,
     nomeCompleto: string,
     imagem: string,
@@ -114,7 +113,7 @@ class Colaborador {
     cargo: Cargo
   ) {
     this.setor = setor;
-    this.idColaborador = idColaborador;
+    this.idColaborador = this.gerarIDColaborador();
     this.CPF = CPF;
     this.nomeCompleto = nomeCompleto;
     this.imagem = imagem;

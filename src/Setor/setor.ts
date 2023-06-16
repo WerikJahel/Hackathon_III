@@ -2,11 +2,11 @@ import { Departamento } from "../Departamento/departamento";
 import { Patrimonio } from "../Patrimonio/patrimonio";
 
 class Setor {
-  private _idSetor: number = 0;
-  private _nomeDoSetor: string = "";
-  private _funcaoDoSetor: string = "";
-  private _departamento!: Departamento;
-  private _patrimonio: Patrimonio[] = [];
+  private _idSetor: number;
+  private _nomeDoSetor: string;
+  private _funcaoDoSetor: string;
+  private _departamento: Departamento;
+  private _patrimonio: Patrimonio[];
 
   public get idSetor(): number {
     return this._idSetor;

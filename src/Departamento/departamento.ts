@@ -1,7 +1,7 @@
 class Departamento {
-  private _idDepartamento: number = 0;
-  private _nomeDoDepartamento: string = "";
-  private _funcaoDoDepartamento: string = "";
+  private _idDepartamento: number;
+  private _nomeDoDepartamento: string;
+  private _funcaoDoDepartamento: string;
 
   public get idDepartamento(): number {
     return this._idDepartamento;

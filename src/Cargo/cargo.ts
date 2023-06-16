@@ -1,7 +1,7 @@
 class Cargo {
-  private _idCargo: number = 0;
-  private _nomeDoCargo: string = "";
-  private _funcaoDoCargo: string = "";
+  private _idCargo: number;
+  private _nomeDoCargo: string;
+  private _funcaoDoCargo: string;
 
   public get idCargo(): number {
     return this._idCargo;

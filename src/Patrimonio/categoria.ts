@@ -1,6 +1,6 @@
 class Categoria {
-  private _idCategoria: number = 0;
-  private _nomeDaCategoria: string = "";
+  private _idCategoria: number;
+  private _nomeDaCategoria: string;
 
   public get idCategoria(): number {
     return this._idCategoria;

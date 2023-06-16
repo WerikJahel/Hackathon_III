@@ -58,7 +58,6 @@ const joao = new Colaborador(
     ),
     [cadeira]
   ),
-  123456789,
   "000.000.000-00",
   "joão",
   "",

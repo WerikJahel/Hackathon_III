@@ -7,15 +7,15 @@ import {
 } from "../Ocorrencia/ocorrencia";
 
 class Patrimonio {
-  private _categoria: Categoria[] = [];
+  private _categoria: Categoria[];
   private _idPatrimonio: number;
   private _codigo: number;
   private _nomeDoBem: string;
   private _dataDeAquisicao: string;
   private _vidaUtil: number; //Em Meses
   private _custo: number; //valorAdiquirido
-  private _depreciacao: number = 0; //Em porcentagem de acordo com a categoria
-  private _estado: EstadoDoBem = EstadoDoBem.ATIVO;
+  private _depreciacao: number; //Em porcentagem de acordo com a categoria
+  private _estado: EstadoDoBem;
   private _ocorrencia: Ocorrencia;
 
   public get categoria(): Categoria[] {
